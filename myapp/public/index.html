@@ -6,15 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn Node</title>
-    <script defer src="logic.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <h1>Learn Node</h1>
-    <img src="up.jpg" alt="" height="50%" width="50%">
-    <br>
-    <button onclick="loadText()">Load text!</button>
+
+
+    <div class="container">
+        <hr>
+        <h1>Create New Task</h1>
+        <hr>
+
+        <form action="http://localhost:3000/task" method="POST">
+            <div class="form-group">
+                <label for="Title">Task</label>
+                <input id="text1" class="form-control" placeholder="Task to do" name="title">
+            </div>
+
+           
+
+            <!--Other fields-->
+            <input onclick="blast()" id="submit" type="button" value="Submit" onclick="send()">
+        </form>
+    </div>
+
+    <script defer src="logic.js"></script>
 </body>
 
 </html>
